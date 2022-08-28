@@ -63,7 +63,7 @@ header{
     /*background-image: url(sp_search.png);*/
     /*background-position: -4px -4px;*/
     /*background-repeat: no-repeat;*/
-    background: url(./sp_search.png) -4px -4px no-repeat; /* 위에 3가지를 압축하여 작성이 가능하다 */
+    background: url(./images/sp_search.png) -4px -4px no-repeat; /* 위에 3가지를 압축하여 작성이 가능하다 */
     text-indent: 100%;
     overflow: hidden;
     vertical-align: middle;
@@ -140,7 +140,7 @@ header{
 }
 
 #search-image{ /* 검색 돋보기 이미지 */
-    background-image: url(./sp_search.png);
+    background-image: url(./images/sp_search.png);
     background-position:-4px -60px; /* 좌,우 위,아래 */
     background-repeat: no-repeat;
     width: 22px;
@@ -230,7 +230,7 @@ nav>div>ul{ /*nav 카테고리 유형 */
 
 #nav-menu li span:first-child{ /* nav li span:first-child안에 공통적인 요소 분리 */
     height: 16px;
-    background-image: url(./sp_nav.png);
+    background-image: url(./images/sp_nav.png);
     display: inline-block;
     margin-left: 10px;
 }
@@ -337,7 +337,7 @@ main{
     margin-right: 8px;
     margin-bottom: 8px;
     float: left;
-    background-image: url(./78791b4573cf95beb6c0_20220704172912446.jpg);
+    background-image: url(./images/78791b4573cf95beb6c0_20220704172912446.jpg);
     background-position: -3px -397px;
     background-size: 731px;
 }
@@ -454,7 +454,7 @@ main{
 }
 
 #news-img{
-    background: url(./sp_main_4f8ccb.png);
+    background: url(./images/sp_main_4f8ccb.png);
     width: 27px;
     height: 24px;
     display: inline-block;
@@ -512,7 +512,7 @@ main{
     background-color: #fff;
     vertical-align: top;
     margin-bottom: 4px;
-    background: url(./weather.png) no-repeat;
+    background: url(./images/weather.png) no-repeat;
     background-size: 100%;
 }
 
@@ -521,7 +521,7 @@ main{
     width: 330px;
     height: 150px;
     background-color: #999;
-    background-image: url(./23fadb81266719526095d2d0b1b8932b.jpg);
+    background-image: url(./images/23fadb81266719526095d2d0b1b8932b.jpg);
     background-size: 351px 253px;
     background-position: -1px -17px;
     vertical-align: top;
@@ -575,7 +575,7 @@ main{
     height: 128px;
     background-color: #888;
     float: left;
-    background-image: url(./images.jpg);
+    background-image: url(./images/images.jpg);
     background-size: 351px 253px;
     background-position: -1px -21px;
 }
@@ -621,7 +621,7 @@ main{
     margin: 0;
     padding: 0;
     height: 837px;
-    background: url(./webtoon.png) no-repeat;
+    background: url(./images/webtoon.png) no-repeat;
     background-size: 124%;
 }
 
@@ -671,7 +671,7 @@ main{
     height: 14px;
     top: 15px;
     left: 12px;
-    background: url(./sp_themecast.png) no-repeat;
+    background: url(./images/sp_themecast.png) no-repeat;
     background-position: -218px -257px;
 }
 
@@ -681,7 +681,7 @@ main{
     height: 16px;
     top: 15px;
     left: 12px;
-    background: url(./sp_themecast.png) no-repeat;
+    background: url(./images/sp_themecast.png) no-repeat;
     background-position: -316px 0px;
 }
 
@@ -691,7 +691,7 @@ main{
     height: 16px;
     top: 15px;
     left: 12px;
-    background: url(./sp_themecast.png) no-repeat;
+    background: url(./images/sp_themecast.png) no-repeat;
     background-position: -314px -52px;
 }
 
