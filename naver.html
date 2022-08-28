@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> <!--네이버 아이콘 적용-->
+    <link rel="stylesheet" href="naver.css">
+</head>
+<body>
+    
+    <header>
+        <div class="center-align"> <!--가운데 정렬용 div-->
+
+            <div id="header-baro"> <!--  header 1 -->
+                <span>네이버를 시작페이지로 |</span>
+                <span>쥬니어네이버 |</span>
+                <span>해피빈</span>
+            </div>
+
+            <div id="header-search"> <!-- header 2 -->
+                <a href="https://www.naver.com/">
+                    <h1>네이버</h1>
+                </a>
+                
+                <h2 class="blind">검색창</h2>
+                    <fieldset>
+                        <legend class="blind">검색</legend>
+                        <input /> <!--검색 바-->
+                        <span id="searh-keyboard"></span>
+                        <span id="searh-history"></span>
+                        <button>
+                            <span class="blind">검색</span>
+                            <span id="search-image"></span>
+                        </button>
+                    </fieldset>
+            </div>
+
+        </div>
+    </header>
+    <!--header-->
+
+    <nav  class="center-align">
+       <div id="search-ranking">
+            <h2 class="blind">실시간 검색어</h2>
+            <div>
+                <span id="rank-number">1</span>
+                <span id="rank-explain">도라에몽 진구 이별</span>
+            </div>
+
+            <ul>
+                <li> <!--실시간 검색어 순위-->
+
+                    <div id="time-rank">실시간 순위</div>
+                    <div id="time-rank-right">전체연령      현재</div>
+
+                    <div id="real-time-rank">
+                        <div>
+                            <span class="rank-number">1</span>
+                            <span class="rank-explain">도라에몽 진구 이별</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">2</span>
+                            <span class="rank-explain">된장찌개 두부 필수</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">3</span>
+                            <span class="rank-explain">코카콜라보다 펩시가 더 맛있다는 연구결과</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">4</span>
+                            <span class="rank-explain">고양이 발남새 중독 조심!</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">5</span>
+                            <span class="rank-explain">퉁퉁이 "사실 퉁퉁하지 않아" 폭로</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">6</span>
+                            <span class="rank-explain">해먹는 음식보다 사먹는 음식이 더 맛있어</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">7</span>
+                            <span class="rank-explain">떡볶이에는 야채튀김이 잘 어울려</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">8</span>
+                            <span class="rank-explain">아이스크림을 참기름에 찍어먹어보자</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">9</span>
+                            <span class="rank-explain">고양이는 멍멍</span>
+                        </div>
+                        <div>
+                            <span class="rank-number">10</span>
+                            <span class="rank-explain">진순 혐오 멈춰!</span>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+       </div> 
+
+       <div>
+            <ul id="nav-menu">
+                <li>
+                    <a href="">
+                        <span class="nav-item-mail"></span>
+                        <span class="blind">메일</span>
+                    </a>
+                </li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">카페</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">지식인</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">블로그</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">쇼핑</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">네이버 페이</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">네이버TV</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">사전</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">뉴스</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">증권</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">번역기</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">지도</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">영화</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">책</span></a></li> <!-- list item -->
+                <li><a href=""><span></span><span class="blind">웹툰</span></a></li> <!-- list item -->
+            </ul>
+        </div>
+
+    </nav> 
+
+    <main>
+        <div id="main-centerd" class="center-align">
+
+            <div id="main-first-block"> <!-- main 1 -->
+                <div id="main-ad"></div>
+
+                <div id="main-login">
+                    <h3 class="blind">로그인</h3>
+                    <div class="login-wrapper">
+                        <span>네이버를 더 안전하고 편리하게 이용하세요.</span>
+                        <a href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https%3A%2F%2Fwww.naver.com" id="naver-login">
+                            <span>NAVER 로그인</span>
+                        </a>
+                        <div id="naver-login-find">
+                            <a href="https://nid.naver.com/user/help.nhn?todo=idinquiry" id="naver-login-find-id">
+                                <span>아이디</span>
+                            </a>
+                            <a href="https://nid.naver.com/nidreminder.form" id="naver-login-find-password">
+                                <span>비밀번호 찾기</span>
+                            </a>
+                            <a href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com" id="naver-join-membership">
+                                <span>회원가입</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="main-second-block"> <!-- main 2 -->
+
+                <div class="float-left">
+                    <div id="main-ytn">
+                        <h3>연합뉴스 > </h3>
+                            <ol>
+                                <li>충격! 곰은 사람을 찢어</li>
+                            </ol>
+                    </div>
+
+                    <div id="main-newsstand">
+                        <div id="news-img"></div>
+                        <h3>뉴스스탠드 > </h3>
+                            <ul>
+                                <li><img src="./005.png" alt="국민일보"/></li>
+                                <li><img src="./009.png" alt="매일경제"/></li>
+                                <li><img src="./079.png" alt="노컷뉴스"/></li>
+                                <li><img src="./076.png" alt="스포츠조선"/></li>
+                                <li><img src="./904.png" alt="JTBC"/></li>
+                                <li><img src="./015.png" alt="한국경제"/></li>
+                                <li><img src="./214.png" alt="MBC"/></li>
+                                <li><img src="./056.png" alt="KBS"/></li>
+                                <li><img src="./340.png" alt="OBS"/></li>
+                                <li><img src="./052.png" alt="YTN"/></li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="float-left">
+                    <div id="main-weather">
+                        <a href="https://weather.naver.com/today/03123127">
+                            <span class="blind">날씨</span>
+                        </a>
+                    </div>
+
+                    <div id="main-second-ad"></div>
+                </div>
+                
+            </div>
+
+            <div id="main-third-block"> <!-- main 3 -->
+                <div id="main-category">
+                    <h3 class="blind">주제별 보기</h3>
+                    <div id="main-category-top">
+                        <button id="subject-all">
+                            <span class="blind">전체 주제 열기</span>
+                            <span></span>
+                        </button>
+                        <div id="subject-list">
+                            <div class="opacity left"></div>
+                            <ul>
+                                <li>리빙</li>
+                                <li>푸드</li>
+                                <li>스포츠</li>
+                                <li>자동차</li>
+                                <li>패션뷰티</li>
+                                <li>부모i</li>
+                                <li>건강</li>
+                                <li class="highlight">웹툰</li>
+                                <li>게임</li>
+                                <li>TV연예</li>
+                                <li>뮤직</li>
+                                <li>영화</li>
+                                <li>책문화</li>
+                            </ul>
+                            <div class="opacity right"></div>
+                            <div id="webtoon-category"></div>
+                        </div>
+                        <button id="subject-prev">
+                            <span class="blind">이전 주제</span>
+                            <span></span>
+                        </button>
+                        <button id="subject-next">
+                            <span class="blind">다음 주제</span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="main-shopping">
+                    <iframe src="https://castbox.shopping.naver.com/shopbox/main.nhn?"frameborder="0"></iframe>
+                </div>
+            </div>
+            
+            <div id="main-fourth-block"><!-- main 4 -->
+                <div id="main-event">
+                    <h3>이벤트</h3>
+                </div>
+
+                <div id="main-third-ad"></div>
+            </div>
+
+
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="center-align">
+
+            <div>공지사항</div>
+            <div>Creators</div>
+            <div>회사소개</div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,700 @@
+
+*{
+    box-sizing: border-box; /* border를 기준으로 width와 height값을 나내냄 */
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.float-left{
+    float: left;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+/* reset */
+
+.blind{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+header{
+    height: 160px;
+}
+
+#header-baro{ /* 오른쪽 상단 네이버 바로가기 외3 */
+    position: relative;
+    right: -800px;
+    font-size: 12px;
+    color: #a1a1a1;
+    padding-top: 10px;
+}
+
+.center-align{ /* 가운데 정렬 */
+    margin: 0 auto;
+    width: 1080px;
+}
+
+#header-search{
+    padding-top: 31px;
+}
+
+#header-search>a{
+    text-decoration: none;
+}
+
+#header-search h1{
+    width: 198px;
+    height: 48px;
+    display: inline-block;
+    /*background-image: url(sp_search.png);*/
+    /*background-position: -4px -4px;*/
+    /*background-repeat: no-repeat;*/
+    background: url(./sp_search.png) -4px -4px no-repeat; /* 위에 3가지를 압축하여 작성이 가능하다 */
+    text-indent: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+    top: -5px;
+}
+
+#header-search > h2{
+    display: none;
+}
+
+
+#header-search > fieldset{
+    margin-left: 20px;
+    /* padding-top: 12px; */
+    /* padding-bottom: 12px; */
+    /* padding-right: 10px; */
+    /* padding-left: 10px; */
+    padding: 12px 10px 12px 10px; /* 압축하여 작성 가능  상 우 하 좌*/
+    width: 519px;
+    height: 52px;
+    display: inline-block;
+    border: 2px solid #19ce60; /* color를 hex 표기법으로 나타냄 */
+    vertical-align: middle;
+    position: relative;
+}
+
+#header-search fieldset input{ /* 검색바 */
+    border: none;
+    padding: 0;
+    outline: none;
+    width: 386px;
+    height: 24px;
+    vertical-align: top;
+}
+
+#searh-keyboard{ /* 검색 키보드 이미지 */
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_4f8ccb.png);
+    background-repeat: no-repeat;
+    background-position: -205px -389px;
+    display: inline-block;
+    width: 22px;
+    height: 14px;
+    position: absolute;
+    background-size: 457px 434px;
+    top: 36%;
+    left: 80%;
+    vertical-align: middle;
+}
+
+#searh-history{ /* 검색 기록 이미지 */
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_4f8ccb.png);
+    background-repeat: no-repeat;
+    background-position: -408px -98px;
+    display: inline-block;
+    width: 10px;
+    height: 7px;
+    position: absolute;
+    background-size: 457px 434px;
+    top: 40%;
+    left: 86%;
+    vertical-align: middle;
+}
+
+#header-search fieldset button{
+    width: 51px;
+    height: 51px;
+    border: none;
+    padding: 0;
+    background: #19ce60;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+#search-image{ /* 검색 돋보기 이미지 */
+    background-image: url(./sp_search.png);
+    background-position:-4px -60px; /* 좌,우 위,아래 */
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin: 14px;
+}
+
+/* header */
+
+nav{
+    height: 52px;
+    border-top: 1px solid #f1f3f6;
+    border-bottom: 1px solid #f1f3f6;;
+ }
+ 
+.center-align{
+ position: relative;
+}
+
+#search-ranking{ /* 실시간 검색어*/
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 15px 50px 0 0;
+    width: 198px;
+    height: 20px;
+}
+
+#search-ranking ul{
+    display: none;
+    list-style: none;
+    padding: 17px;
+    margin: 0;
+    width: 332px;
+    height: 334px;
+    border: 1px solid #f2f4f7;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+}
+
+#search-ranking:hover ul{
+    display: inline-block;
+    z-index: 1;
+}
+
+#rank-number{
+    margin-top: 9px;
+    color: #00ab33;
+    font-size: 15px;
+}
+
+#rank-explain{
+    font-size: 14px;
+    color: #898989;
+}
+
+#time-rank{
+    font-size: 14px;
+    padding-bottom: 22px;
+    font-weight: bold;
+}
+
+#time-rank-right{
+    font-weight: lighter;
+    font-size: 12px;
+    color: #a1a1a1;
+    float: right;
+}
+
+#real-time-rank div{
+    padding-bottom: 5px;
+}
+
+nav>div>ul{ /*nav 카테고리 유형 */
+    margin: 0;
+    padding: 15px 0 0 4px;
+    list-style: none;
+}
+
+#nav-menu li{
+    display: inline-block;
+}
+
+#nav-menu li span:first-child{ /* nav li span:first-child안에 공통적인 요소 분리 */
+    height: 16px;
+    background-image: url(./sp_nav.png);
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#nav-menu li:first-child span:first-child{  /* 메일 */
+    width: 25px;
+    background-position: 0 -285px;
+    margin-left: 0; /* 첫번쨰에는 margin이 필요하지 않기 때문에 마진을 빼주기 위해 이를 적용 */
+}
+
+#nav-menu li:nth-child(2) span:first-child{  /* 카페 */
+    width: 30px;
+    background-position: 30px -52px;
+}
+
+#nav-menu li:nth-child(3) span:first-child{  /* 지식인 */
+    width: 44px;
+    background-position: -98px -155px;
+}
+
+#nav-menu li:nth-child(4) span:first-child{  /* 블로그 */
+    width: 44px;
+    background-position: -98px -181px;
+}
+
+#nav-menu li:nth-child(5) span:first-child{  /* 쇼핑 */
+    width: 31px;
+    background-position: -276px -155px;
+}
+
+#nav-menu li:nth-child(6) span:first-child{  /* 네이버 페이 */
+    width: 28px;
+    background-position: -67px -285px;
+}
+
+#nav-menu li:nth-child(7) span:first-child{  /* 네이버TV */
+    width: 36px;
+    background-position: -123px -130px;
+}
+
+#nav-menu li:nth-child(8) span:first-child{  /* 사전 */
+    width: 28px;
+    background-position: -278px -207px;
+}
+
+#nav-menu li:nth-child(9) span:first-child{  /* 뉴스 */
+    width: 32px;
+    background-position: -123px -104px;
+}
+
+#nav-menu li:nth-child(10) span:first-child{  /* 증권 */
+    width: 28px;
+    background-position: -34px -258px;
+}
+
+#nav-menu li:nth-child(11) span:first-child{  /* 번역기 */
+    width: 38px;
+    background-position: -146px -232px;
+}
+
+#nav-menu li:nth-child(12) span:first-child{  /* 지도 */
+    width: 30px;
+    background-position: -276px -128px;
+}
+
+#nav-menu li:nth-child(13) span:first-child{  /* 영화 */
+    width: 28px;
+    background-position: -233px -232px;
+}
+
+#nav-menu li:nth-child(14) span:first-child{  /* 책 */
+    width: 14px;
+    background-position: -140px -76px;
+}
+
+#nav-menu li:nth-child(15) span:first-child{  /* 웹툰 */
+    width: 30px;
+    background-position: -276px 1px;
+}
+
+/* nav */
+
+main{
+    background-color: #f2f4f7;
+    display: inline-block;
+    width: 100%;
+}
+
+#main-centerd{
+    padding: 8px 10px 0px;
+    width: 1100px;
+}
+
+#main-first-block{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+#main-ad{
+    width: 740px;
+    height: 120px;
+    background-color: #999;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    float: left;
+    background-image: url(./78791b4573cf95beb6c0_20220704172912446.jpg);
+    background-position: -3px -397px;
+    background-size: 731px;
+}
+
+#main-login{
+    width: 330px;
+    height: 120px;
+    vertical-align: top;
+    background-color: #fff;
+    margin-bottom: 8px;
+    float: left;
+} 
+
+#main-login .login-wrapper{
+    padding: 17px 25px;
+    font-size: 11px;
+    color: grey;
+}
+
+#naver-login{
+    display: block;
+    margin-top: 10px;
+    width: 280px;
+    height: 46px;
+    background-color: #19ce60;
+    border: 1px solid #15c654;
+    text-align: center;
+}
+
+#naver-login>span{
+    color: white;
+    text-decoration-line: none;
+    font-weight: bolder;
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 12px;
+}
+
+#naver-login-find{
+    width: 260px;
+    height: 20px;
+    padding-top: 8px;
+    padding-left: 18px;
+}
+
+#naver-login-find span{
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+}
+
+#naver-login-find span:hover{
+    text-decoration: underline;
+}
+
+
+#naver-login-find-password{
+    padding-left: 8px;
+}
+
+#naver-join-membership{
+   float: right;
+}/* main 1 */
+
+#main-second-block{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 8px;
+}
+
+#main-second-block .float-left:first-child{ /* #main-second-block 세로 1 */
+    width: 740px;
+    margin-right: 8px;
+    float: left;
+    vertical-align: top;
+}
+
+#main-ytn{
+    display: inline-block;
+    width: 740px;
+    height: 46px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+#main-ytn h3,
+#main-ytn ol{
+    display: inline-block;
+}
+
+#main-ytn h3{
+    font-size: 14px;
+    padding-left: 17px;
+}
+
+#main-ytn ol{
+    padding-left: 10px;
+}
+
+#main-ytn li{
+    font-size: 12px;
+    list-style: none;
+    font-weight: 200;
+}
+
+#main-newsstand{
+    display: inline-block;
+    width: 740px;
+    height: 246px;
+    background-color: #fff;
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+#news-img{
+    background: url(./sp_main_4f8ccb.png);
+    width: 27px;
+    height: 24px;
+    display: inline-block;
+    background-position: -316px 85px;
+    background-size: 432px;
+    position: absolute;
+    top: 193px;
+    left: 15px;
+}
+
+#main-newsstand h3{
+    height: 45px;
+    border-bottom: 1px solid #edebeb;
+    padding-top: 12px;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    right: -34px;
+}
+
+#main-newsstand ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+#main-newsstand li{
+    float: left;
+    width: 148px;
+    height: 100.5px;
+    border-right: 1px solid #f1f3f6;
+    border-bottom: 1px solid #f1f3f6;
+    text-align: center;
+}
+
+#main-newsstand li img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 37%;
+}
+
+#main-second-block .float-left:last-child{  /* #main-second-block 세로 2 */
+    width: 330px;
+    vertical-align: top;
+    float: left;
+    vertical-align: top;
+}
+
+#main-weather{
+    display: inline-block;
+    width: 330px;
+    height: 142px;
+    background-color: #fff;
+    vertical-align: top;
+    margin-bottom: 4px;
+    background: url(./weather.png) no-repeat;
+    background-size: 100%;
+}
+
+#main-second-ad{
+    display: inline-block;
+    width: 330px;
+    height: 150px;
+    background-color: #999;
+    background-image: url(./23fadb81266719526095d2d0b1b8932b.jpg);
+    background-size: 351px 253px;
+    background-position: -1px -17px;
+    vertical-align: top;
+} /* main 2 */
+
+#main-third-block{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 8px;
+}
+
+#main-category{
+    width: 740px;
+    height: 882px;
+    background-color: #fff;
+    margin-right: 8px;
+    float: left;
+}
+
+#main-shopping{
+    width: 330px;
+    height: 882px;
+    background-color: #fff;
+    float: left;
+} 
+
+#main-shopping iframe{
+    width: 100%;
+    height: 100%;
+}/* main 3 */
+
+#main-fourth-block{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 8px;
+}
+
+#main-event{
+    width: 740px;
+    height: 128px;
+    background-color: #fff;
+    vertical-align: top;
+    margin-right: 8px;
+    float: left;
+}
+
+#main-third-ad{
+    width: 330px;
+    height: 128px;
+    background-color: #888;
+    float: left;
+    background-image: url(./images.jpg);
+    background-size: 351px 253px;
+    background-position: -1px -21px;
+}
+
+#main-category-top{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ebeef3;
+}
+
+#subject-list, #subject-all, #subject-prev, #subject-next{
+    float: left;
+    height: 45px;
+}
+
+#subject-list{
+    width: 603px;
+    position: relative;
+}
+
+.opacity{ /* opacity는 쌓임 맥락을 형성한다 */
+    opacity: 0.5;
+    background-color: white;
+}
+
+.opacity.left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 15px;
+}
+
+.opacity.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+    width: 15px;
+}
+
+#webtoon-category{
+    margin: 0;
+    padding: 0;
+    height: 837px;
+    background: url(./webtoon.png) no-repeat;
+    background-size: 124%;
+}
+
+#subject-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 45px;
+    width: 606px;
+}
+
+#subject-list li{
+    float: left;
+    margin-right: 10px;
+    padding: 14px 7px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,
+    "Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+#subject-list li.highlight{ /* 글자 초록색 효과 */
+    border-bottom:3px solid  #00c73c;
+    color: #00b336;
+    height: 45px;
+    font-weight: 700;
+}
+
+#subject-all, #subject-prev, #subject-next{
+    width: 45px;
+    background-color: white;
+    border: none; /* border를 없앤 다음에 새로운 border를 적용 **/
+    border-left: 1px solid #ebeef3;
+    position: relative;
+    padding: 0px;
+}
+
+#subject-all{
+    border-right: 1px solid #ebeef3;
+}
+
+#subject-all span:last-child{
+    position: absolute;
+    width: 25px;
+    height: 14px;
+    top: 15px;
+    left: 12px;
+    background: url(./sp_themecast.png) no-repeat;
+    background-position: -218px -257px;
+}
+
+#subject-prev span:last-child{
+    position: absolute;
+    width: 12px;
+    height: 16px;
+    top: 15px;
+    left: 12px;
+    background: url(./sp_themecast.png) no-repeat;
+    background-position: -316px 0px;
+}
+
+#subject-next span:last-child{
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    top: 15px;
+    left: 12px;
+    background: url(./sp_themecast.png) no-repeat;
+    background-position: -314px -52px;
+}
+
+/* main 4 */
+
+/* main */
